@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int mx_clean_strlen(const char *trim) {
     int len = 0;

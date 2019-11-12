@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int mx_replace_strlen(const char *str, const char *sub, const char *replace) {
     int i = 0;

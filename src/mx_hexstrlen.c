@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int mx_hexstrlen(unsigned long nbr) {
     int len = 1;
