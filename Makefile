@@ -61,6 +61,7 @@ SRCS = src/mx_printchar.c \
 	src/mx_sort_list.c \
 	src/mx_quicksort.c \
 	src/mx_read_line.c \
+	src/mx_bubble_sort.c \
 
 COPIEDSRCS = mx_printchar.c \
 	mx_print_unicode.c \
@@ -123,6 +124,7 @@ COPIEDSRCS = mx_printchar.c \
 	mx_sort_list.c \
 	mx_quicksort.c \
 	mx_read_line.c \
+	mx_bubble_sort.c \
 
 INC = inc/libmx.h \
 
@@ -189,6 +191,7 @@ OBJ = obj/mx_printchar.o \
 	obj/mx_sort_list.o \
 	obj/mx_quicksort.o \
 	obj/mx_read_line.o \
+	obj/mx_bubble_sort.o \
 
 COPIEDOBJ = mx_printchar.o \
 	mx_print_unicode.o \
@@ -251,6 +254,7 @@ COPIEDOBJ = mx_printchar.o \
 	mx_sort_list.o \
 	mx_quicksort.o \
 	mx_read_line.o \
+	mx_bubble_sort.o \
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 

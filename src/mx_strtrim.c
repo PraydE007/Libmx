@@ -15,7 +15,9 @@ char *mx_strtrim(const char *str) {
         l++;
 
     new = mx_strnew(r - l);
-    new = mx_strncpy(new, str + l, r - l);
 
-    return new;
+    if (new == NULL)
+        return new;
+
+    return new = mx_strncpy(new, str + l, r - l);
 }

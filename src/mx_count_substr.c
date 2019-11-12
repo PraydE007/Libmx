@@ -22,8 +22,5 @@ int mx_count_substr(const char *str, const char *sub) {
         i++;
     }
 
-    if (!count)
-        return -1;
-    else
-        return count;
+    return count;
 }

@@ -9,10 +9,10 @@ char *mx_strjoin(const char *s1, const char *s2) {
         return str;
 
     if (s1 != NULL && s2 == NULL)
-        return (char *)s1;
+        return str = (char *)s1;
 
     if (s1 == NULL && s2 != NULL)
-        return (char *)s2;
+        return str = (char *)s2;
 
     str = mx_strnew(mx_strlen(s1) + mx_strlen(s2));
 

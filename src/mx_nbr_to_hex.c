@@ -9,7 +9,7 @@ char *mx_nbr_to_hex(unsigned long nbr) {
 		return s;
 	}
 
-	for (int i = 1; nbr % 16 != 0 || nbr / 16 == 1; i++) {
+	for (int i = 1; nbr % 16 != 0 || nbr / 16 >= 1; i++) {
 		if (nbr % 16 < 10)
 			s[len - i] = nbr % 16 + 48;
 		else

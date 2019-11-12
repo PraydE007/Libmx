@@ -6,6 +6,6 @@ void mx_del_strarr(char ***arr) {
     for (int i = 0; a[i] != NULL; i++)
         mx_strdel(&a[i]);
 
-    free(arr);
-    arr = NULL;
+    free(*arr);
+    *arr = NULL;
 }

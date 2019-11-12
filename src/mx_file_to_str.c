@@ -13,6 +13,10 @@ char *mx_file_to_str(const char *file) {
         len++;
 
     close(fopen);
+
+    if (len <= 0)
+        return NULL;
+
     fopen = open(file, O_RDONLY);
     str = mx_strnew(len);
 

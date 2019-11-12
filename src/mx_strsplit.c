@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 char **mx_strsplit(const char *s, char c) {
-    char **arr = (char **)malloc(sizeof(char) * mx_count_words(s, c) + 1);
+    char **arr = (char **)malloc(sizeof(char **) * mx_count_words(s, c) + 1);
     int strfinded = 0;
     int wlen = 0;
     int i = 0;
@@ -9,8 +9,10 @@ char **mx_strsplit(const char *s, char c) {
 
     arr[mx_count_words(s, c)] = NULL;
 
-    if (s == NULL)
+    if (s == NULL) {
+        mx_del_strarr(&arr);
         return NULL;
+    }
 
     while (s[i] != '\0')
     {

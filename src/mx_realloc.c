@@ -7,6 +7,9 @@ void *mx_realloc(void *ptr, size_t size) {
     if (new == NULL)
         return NULL;
 
+    if (ptr == NULL)
+        return new;
+
     for (unsigned int i = 0; i < size; i++)
         new[i] = p[i];
 

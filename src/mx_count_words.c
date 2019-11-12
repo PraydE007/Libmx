@@ -20,8 +20,5 @@ int mx_count_words(const char *str, char c) {
         i++;
     }
 
-    if (!count)
-        return -1;
-    else
-        return count;
+    return count;
 }
