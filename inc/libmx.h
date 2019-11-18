@@ -46,11 +46,13 @@ double mx_pow(double n, unsigned int pow);
 unsigned long mx_hex_to_nbr(const char *hex);
 
 int mx_sqrt(int x);
+int mx_atoi(char *str); //
 int mx_isspace(char c); //
 int mx_isprint(char c); //
 int mx_nbrlen(long long n); //
 int mx_strlen(const char *s);
 int mx_list_size(t_list *list);
+int mx_arr_size(const char **str); //
 int mx_hexstrlen(unsigned long nbr); //
 int mx_clean_strlen(const char *trim); //
 int mx_bubble_sort(char **arr, int size);
