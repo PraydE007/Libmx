@@ -62,6 +62,7 @@ SRCS = src/mx_printchar.c \
 	src/mx_quicksort.c \
 	src/mx_read_line.c \
 	src/mx_bubble_sort.c \
+	src/mx_get_arrstr_index.c \
 
 OBJ = mx_printchar.o \
 	mx_print_unicode.o \
@@ -125,6 +126,7 @@ OBJ = mx_printchar.o \
 	mx_quicksort.o \
 	mx_read_line.o \
 	mx_bubble_sort.o \
+	mx_get_arrstr_index.o \
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 

@@ -63,6 +63,7 @@ int mx_memcmp(const void *s1, const void *s2, size_t n);
 int mx_strncmp(const char *s1, const char *s2, int len); //
 int mx_get_substr_index(const char *str, const char *sub);
 int mx_get_subchar_index(const char *str, const char sub); //
+int mx_get_arrstr_index(const char **arr, const char *str); //
 int mx_binary_search(char **arr, int size, const char *s, int *count);
 int mx_read_line(char **lineptr, int buf_size, char delim, const int fd);
 int mx_replace_strlen(const char *str, const char *sub, const char *replace); //
