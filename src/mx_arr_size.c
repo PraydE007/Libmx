@@ -1,4 +1,4 @@
-#include "../inc/pathfinder.h"
+#include "../inc/libmx.h"
 
 int mx_arr_size(const char **str) {
     int len = 0;
