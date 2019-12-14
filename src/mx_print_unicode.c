@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void mx_print_unicode(wchar_t c) {
     char wc[4] = {0, 0, 0, 0};
@@ -21,6 +21,5 @@ void mx_print_unicode(wchar_t c) {
         wc[2] = ((c >> 6) & 0x3F) | 0x80;
         wc[3] = ((c >> 0) & 0x3F) | 0x80;
     }
-
     write(1, wc, 4);
 }

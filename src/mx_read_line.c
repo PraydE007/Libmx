@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_read_line(char **lineptr, int buf_size, char delim, const int fd) {
     int i = 0;
@@ -9,7 +9,6 @@ int mx_read_line(char **lineptr, int buf_size, char delim, const int fd) {
 
     if (fd < 0)
         return -1;
-
     while (read(fd, &buf, 1) && i < buf_size) {
         if (buf != delim) {
             bytes += sizeof(buf);
@@ -19,6 +18,5 @@ int mx_read_line(char **lineptr, int buf_size, char delim, const int fd) {
         }
         i++;
     }
-
     return bytes;
 }

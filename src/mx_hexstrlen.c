@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_hexstrlen(unsigned long nbr) {
     int len = 1;
@@ -7,6 +7,5 @@ int mx_hexstrlen(unsigned long nbr) {
             nbr /= 16;
             len++;
     }
-
     return len;
 }

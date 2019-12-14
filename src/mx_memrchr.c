@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void *mx_memrchr(const void *s, int c, size_t n) {
     char *p = (char *)s;
@@ -8,6 +8,5 @@ void *mx_memrchr(const void *s, int c, size_t n) {
         if (p[i] == c)
             return &p[i];
     }
-
     return NULL;
 }

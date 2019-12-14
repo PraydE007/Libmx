@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_isprint(char c) {
     if (c > 32 && c < 127)

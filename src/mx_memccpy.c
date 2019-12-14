@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n) {
     unsigned int i = 0;
@@ -10,6 +10,5 @@ void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n) 
             break;
 		p1[i] = p2[i];
 	}
-
 	return dst;
 }

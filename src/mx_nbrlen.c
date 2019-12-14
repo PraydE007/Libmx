@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_nbrlen(long long n) {
     int size = 0;
@@ -7,6 +7,5 @@ int mx_nbrlen(long long n) {
         n /= 10;
         size++;
     }
-
     return size;
 }

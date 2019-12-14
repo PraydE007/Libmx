@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_strncmp(const char *s1, const char *s2, int len) {
 	int i = 0;
@@ -8,6 +8,5 @@ int mx_strncmp(const char *s1, const char *s2, int len) {
 			return s1[i] - s2[i];
 		i++;
 	}
-
 	return 0;
 }

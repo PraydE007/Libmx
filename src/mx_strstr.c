@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 char *mx_strstr(const char *haystack, const char *needle) {
     int i = 0;
@@ -6,7 +6,6 @@ char *mx_strstr(const char *haystack, const char *needle) {
 
     while (haystack[i] != '\0') {
         j = 0;
-
         if (haystack[i] == needle[0]) {
             while (haystack[i + j] == needle[j]
                 && needle[j] != '\0')
@@ -16,6 +15,5 @@ char *mx_strstr(const char *haystack, const char *needle) {
         }
         i++;
     }
-
     return NULL;
 }

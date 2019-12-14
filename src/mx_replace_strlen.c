@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_replace_strlen(const char *str, const char *sub, const char *replace) {
     int i = 0;
@@ -8,7 +8,6 @@ int mx_replace_strlen(const char *str, const char *sub, const char *replace) {
 
     slen = mx_strlen(sub);
     rlen = mx_strlen(replace);
-
     while (str[i] != '\0') {
         if (str[i] == sub[0]) {
             if (mx_strncmp(&str[i], sub, slen) == 0) {
@@ -23,6 +22,5 @@ int mx_replace_strlen(const char *str, const char *sub, const char *replace) {
             i++;
         }
     }
-
     return len;
 }

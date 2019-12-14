@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 char *mx_nbr_to_hex(unsigned long nbr) {
     int len = mx_hexstrlen(nbr);
@@ -8,7 +8,6 @@ char *mx_nbr_to_hex(unsigned long nbr) {
 		s[0] = '0';
 		return s;
 	}
-
 	for (int i = 1; nbr % 16 != 0 || nbr / 16 >= 1; i++) {
 		if (nbr % 16 < 10)
 			s[len - i] = nbr % 16 + 48;
@@ -16,6 +15,5 @@ char *mx_nbr_to_hex(unsigned long nbr) {
 			s[len - i] = nbr % 16 + 87;
 		nbr /= 16;
 	}
-
 	return s;
 }

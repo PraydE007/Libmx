@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_memcmp(const void *s1, const void *s2, size_t n) {
     unsigned int i = 0;
@@ -10,6 +10,5 @@ int mx_memcmp(const void *s1, const void *s2, size_t n) {
 			return p1[i] - p2[i];
 		i++;
 	}
-
 	return 0;
 }

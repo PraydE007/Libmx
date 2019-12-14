@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 char *mx_replace_substr(const char *str, const char *sub, const char *replace) {
     char *new = NULL;
@@ -10,12 +10,10 @@ char *mx_replace_substr(const char *str, const char *sub, const char *replace) {
 
     if (str == NULL || sub == NULL || replace == NULL)
         return NULL;
-
     slen = mx_strlen(sub);
     rlen = mx_strlen(replace);
     len = mx_replace_strlen(str, sub, replace);
     new = mx_strnew(len);
-
     while (str[i] != '\0') {
         if (str[i] == sub[0]) {
             if (mx_strncmp(&str[i], sub, slen) == 0) {
@@ -35,6 +33,5 @@ char *mx_replace_substr(const char *str, const char *sub, const char *replace) {
             j++;
         }
     }
-
     return new;
 }

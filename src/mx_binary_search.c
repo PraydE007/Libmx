@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_binary_search(char **arr, int size, const char *s, int *count) {
 	int l = 0;
@@ -9,7 +9,6 @@ int mx_binary_search(char **arr, int size, const char *s, int *count) {
 	while (l <= size) {
 		m = (l + size) / 2;
 		(*count)++;
-
 		if (mx_strcmp(arr[m], s) < 0) {
 			l = m + 1;
 		}
@@ -19,7 +18,6 @@ int mx_binary_search(char **arr, int size, const char *s, int *count) {
 		else
 			return m;
 	}
-
 	*count = 0;
 	return -1;
 }

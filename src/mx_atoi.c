@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_atoi(char *str) {
     int res = 0;
@@ -9,9 +9,7 @@ int mx_atoi(char *str) {
         sign = -1;
         i++;
     }
-
     for (; str[i] != '\0'; ++i)
         res = res * 10 + str[i] - '0';
-
     return sign * res;
 }

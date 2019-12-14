@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 int mx_clean_strlen(const char *trim) {
     int len = 0;
@@ -11,11 +11,9 @@ int mx_clean_strlen(const char *trim) {
         }
         if (mx_isspace(trim[i])) {
             len++;
-
             while (mx_isspace(trim[i]))
                 i++;
         }
     }
-
     return len;
 }

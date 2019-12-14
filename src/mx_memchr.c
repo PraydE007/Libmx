@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void *mx_memchr(const void *s, int c, size_t n) {
     unsigned int i = 0;
@@ -8,6 +8,5 @@ void *mx_memchr(const void *s, int c, size_t n) {
         if (p[i] != c)
             return &p[i];
     }
-
     return NULL;
 }

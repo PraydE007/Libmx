@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 char *mx_itoa(int number) {
     int size = mx_nbrlen(number);
@@ -14,16 +14,12 @@ char *mx_itoa(int number) {
         minus = 1;
         size++;
     }
-
     s = mx_strnew(size);
-
     for (int i = size - 1; i >= 0; i--) {
         s[i] = (number % 10) + 48;
         number /= 10;
     }
-
     if (minus)
         s[0] = '-';
-
     return s;
 }

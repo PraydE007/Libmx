@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void mx_printstr(const char *s) {
 	if (s == NULL)
